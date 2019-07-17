@@ -1,0 +1,8 @@
+* use logging instead of print
+
+* When calculating fingerprints: If fingerprints.pk is present, check for new
+  image files and calculate for those only.
+
+* Add option to main() for passing a global fingerprints.pk file, which gets
+  updated. Remove hard-coded location
+  /path/to/pics/imagecluster/fingerprints.pk
