@@ -9,3 +9,4 @@ test/.*
 .DS_Store
 .idea
 *.log
+*.csv
