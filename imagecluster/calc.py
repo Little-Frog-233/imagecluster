@@ -286,7 +286,9 @@ def cluster_kmeans(fps, n_clusters=5):
     :param n_cluster:
     :return:
     '''
+    assert n_clusters > 0, "num of clusters not <0"
     file_path = fps.keys()
+    assert n_clusters <= len(file_path), "num of cluster too big"
     file_value = [i.tolist() for i in fps.values()]
     file_value = np.array(file_value)
     df = pd.DataFrame(file_value, columns=['feature_%s' % i for i in range(file_value.shape[1])])
